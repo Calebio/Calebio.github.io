@@ -24,3 +24,20 @@ I've been curious about a lot of things in IT and this makes me always want to l
 <p> Cloud technologies has been one of the things that fascinates me too, I'm certified as an AWS Cloud Practicioner and I want to advance towards cloud technologies because there's a lot you can achieve with cloud technologies. <br>
 The next step is working towards becoming a Cloud Solution Architect to broaden my scope in cloud technologies
 and to provide the best of my skills to make sure customers are satisfied </p>
+
+
+<h3>Connect with me:</h3>
+<p align="left">
+  <a href="https://www.linkedin.com/in/caleb-emmanuel-246555176/" target="blank"><img align="center"
+      src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
+      alt="Caleb" height="30" width="40" /></a>
+  <a href="https://fb.com/Calebio10" target="blank"><img align="center"
+      src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg"
+      alt="Calebio" height="30" width="40" /></a>
+  <a href="https://www.instagram.com/_your_village_boy/" target="blank"><img align="center"
+      src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
+      alt="_._.adam._" height="30" width="40" /></a>
+ <a href="https://twitter.com/Caleb08088" target="blank"><img align="center"
+      src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
+      alt="Caleb" height="30" width="40" /></a>
+</p>
