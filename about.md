@@ -1,6 +1,7 @@
 ---
 layout: about
 title: About
+banner : "assets/images/banners/other.jpg"
 ---
 
 ## About
