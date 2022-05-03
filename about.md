@@ -27,7 +27,7 @@ and to provide the best of my skills to make sure customers are satisfied </p>
 
 ### Connect with me
 Please feel free to reach out.
-Send me a mail [Kalebiotezz@yahoo.com] <br>
+[Kalebiotezz@yahoo.com] feel <br>
 [LinkedIn](https://www.linkedin.com/in/caleb-emmanuel-246555176/). <br>
 [Instagram](https://www.instagram.com/_your_village_boy/) <br>
 [Facebook](https://fb.com/Calebio10) <br>
