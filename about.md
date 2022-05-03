@@ -26,8 +26,8 @@ The next step is working towards becoming a Cloud Solution Architect to broaden 
 and to provide the best of my skills to make sure customers are satisfied </p>
 
 ### Connect with me
-Please feel free to reach out.
-Send me a mail <Kalebiotezz@yahoo.com> <br>
+Please feel free to reach out via any of the most convinient mean for you. <br>
+Send me a mail I'd get this faster <Kalebiotezz@yahoo.com> <br>
 [LinkedIn](https://www.linkedin.com/in/caleb-emmanuel-246555176/). <br>
 [Instagram](https://www.instagram.com/_your_village_boy/) <br>
 [Facebook](https://fb.com/Calebio10) <br>
