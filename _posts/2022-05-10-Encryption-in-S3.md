@@ -12,12 +12,10 @@ Securing files and keeping them from unathorized access is very important. As yo
 
 ### Encryption in Transit
 This means encryption of data when sending to and from your bucket and you can achieve this with <br/>
-
 - SSL/TLS
 - HTTPS
 
-### Encryptioin at rest
-
+### Encryption at rest
 - SSE-S3 <br/>
 S3 Managed keys using AES256-bit Encryption `x-amz-server-side-encryption : AES256`
 
@@ -36,7 +34,6 @@ There are two  ways to add server-side encryption: <br/>
 Select encryption setting on your S3 bucket, the easiest way is to check a box on the console.
 
 **Adding ecryption to a bucket at creation.**
-
 - Go to AWS Management Console
 - Go to storage and click on S3
 - Click Create Bucket, Scroll down and find where you have default encryption
@@ -53,9 +50,6 @@ Select encryption setting on your S3 bucket, the easiest way is to check a box o
 - Encryption is **Successful!**
 
 
-
 - ### Bucket Policy
 You can enforce encryption using bucket policy.
 A bucket policy can deny all S3 `PUT` requests that don't include the `x-amz-server-side-encryption` parameter in the request header.
-
-From the created bucket we will click on permissions and scroll down to where we have bucket policy and specify the policy in `json` format
