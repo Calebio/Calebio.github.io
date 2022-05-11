@@ -1,7 +1,7 @@
 ---
 layout: post
 title: S3 Encryption
-subtitle: How to encrypt file and enforce in S3
+subtitle: How to encrypt S3 bucket and files
 categories: Site
 tags: [S3, Storage, Encryption]
 ---
