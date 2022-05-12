@@ -31,7 +31,7 @@ Key Management Service `x-amz-server-side-encryption : kms : aws`
 - SSE-C <br/>
 Customer provided keys
 
-**Client-Side Encryption**
+**Client-Side Encryption**<br/>
 This is a case where you as a user encrypt your files before you upload them to your S3 bucket. 
  
 Your company might have a policy where all files going into a particular bucket has to be encrypted. Here's to enforce encryption: <br/>
@@ -77,7 +77,7 @@ Select encryption setting on your S3 bucket, the easiest way is to check a box o
 - Click on the created file and scroll down to **Server-side**
 - Encryption is **Successful!**
 
- Where encryption is enabled, the `PUT` request looks like
+ When encryption is enabled, the `PUT` request looks like
 
  ```json 
   
