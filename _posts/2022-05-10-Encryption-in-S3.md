@@ -4,9 +4,14 @@ title: S3 Encryption
 subtitle: How to encrypt S3 bucket and files
 categories: Site
 tags: [S3, Storage, Encryption]
+
 ---
 
-Securing files and keeping them from unathorized access is very important. As you know in the shared responsibility model, you are responsible for the security in the cloud. Encryption in S3 is a very crutial security mechanism used in making sure your bucket and files are secure.
+
+
+Securing files and keeping them from unathorized access is very important. As you know in the shared responsibility model, you are responsible for the security in the cloud. Encryption in S3 is a very crutial security mechanism used in making sure your bucket and files are secure. 
+ 
+
 
 ## Types of Encryption 
 
@@ -15,7 +20,8 @@ This means encryption of data when sending to and from your bucket and you can a
 - SSL/TLS
 - HTTPS
 
-### Encryption at rest
+### Encryption at rest **
+**Server-side Encryption**
 - SSE-S3 <br/>
 S3 Managed keys using AES256-bit Encryption `x-amz-server-side-encryption : AES256`
 
@@ -24,6 +30,28 @@ Key Management Service `x-amz-server-side-encryption : kms : aws`
 
 - SSE-C <br/>
 Customer provided keys
+
+**Client-Side Encryption**
+This is a case where you as a user encrypt your files before you upload them to your S3 bucket. 
+ 
+Your company might have a policy where all files going into a particular bucket has to be encrypted. Here's to enforce encryption: <br/>
+
+
+Everytime a user uploads a file to S3, a `PUT` request is sent,
+Below it a `PUT` Request when encryption is not enabled. <br/>
+
+```json
+PUT /Key+ HTTP/1.1
+Host: Bucket.s3.amazonaws.com
+Date: Tue, 09 May 2022  
+Authorization: authorization string
+Content-Type: text/plain
+Content-Length: 27364
+x-amz-meta-author : Caleb
+Expect: 100-continue
+[27363 bytes of object data]
+```
+
 
 
 ## How to add Server-side Encryption
@@ -49,7 +77,25 @@ Select encryption setting on your S3 bucket, the easiest way is to check a box o
 - Click on the created file and scroll down to **Server-side**
 - Encryption is **Successful!**
 
+ Where encryption is enabled, the `PUT` request looks like
+
+ ```json 
+  
+PUT /Key+ HTTP/1.1
+Host: Bucket.s3.amazonaws.com
+Date: Tue, 09 May 2022  
+Authorization: authorization string
+Content-Type: text/plain
+Content-Length: 27364
+x-amz-meta-author : Caleb
+Expect: 100-continue
+x-amz-server-side-encryption : AES256
+[27363 bytes of object data]
+
+ ```
+
 
 - ### Bucket Policy
 You can enforce encryption using bucket policy.
-A bucket policy can deny all S3 `PUT` requests that don't include the `x-amz-server-side-encryption` parameter in the request header.
+A bucket policy can deny all S3 `PUT` requests that has no encryption parameter in the request header just like `x-amz-server-side-encryption : AES256`. A more detailed way of enforcing bucket policy  **[Bucket-Policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/add-bucket-policy.html)
+
