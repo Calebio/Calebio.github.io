@@ -97,5 +97,5 @@ x-amz-server-side-encryption : AES256
 
 - ### Bucket Policy
 You can enforce encryption using bucket policy.
-A bucket policy can deny all S3 `PUT` requests that has no encryption parameter in the request header just like `x-amz-server-side-encryption : AES256`. A more detailed way of enforcing bucket policy  **[Bucket-Policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/add-bucket-policy.html)
+A bucket policy can deny all S3 `PUT` requests that has no encryption parameter in the request header just like `x-amz-server-side-encryption : AES256`. A more detailed way of enforcing bucket policy  [Bucket-Policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/add-bucket-policy.html)
 
