@@ -10,7 +10,7 @@ tags: [S3, Storage, Encryption]
 
 
 Securing files and keeping them from unathorized access is very important. As you know in the shared responsibility model, you are responsible for the security in the cloud. Encryption in S3 is a very crutial security mechanism used in making sure your bucket and files are secure. 
- 
+
 
 
 ## Types of Encryption 
@@ -20,10 +20,10 @@ This means encryption of data when sending to and from your bucket and you can a
 - SSL/TLS
 - HTTPS
 
-### Encryption at rest **
+### Encryption at rest 
 **Server-side Encryption**
 - SSE-S3 <br/>
-S3 Managed keys using AES256-bit Encryption `x-amz-server-side-encryption : AES256`
+S3 Amazon Managed keys using AES256-bit Encryption `x-amz-server-side-encryption : AES256`
 
 - SSE-KMS <br/>
 Key Management Service `x-amz-server-side-encryption : kms : aws`
@@ -33,8 +33,8 @@ Customer provided keys
 
 **Client-Side Encryption**<br/>
 This is a case where you as a user encrypt your files before you upload them to your S3 bucket. 
- 
-Your company might have a policy where all files going into a particular bucket has to be encrypted. Here's to enforce encryption: <br/>
+
+
 
 
 Everytime a user uploads a file to S3, a `PUT` request is sent,
@@ -52,10 +52,11 @@ Expect: 100-continue
 [27363 bytes of object data]
 ```
 
+**Use Case**<br/>
+Your company might have a policy where all files going into a particular bucket has to be encrypted. Here's to enforce encryption:  Now encryptio has to be enforced. <br/>
 
 
 ## How to add Server-side Encryption
-
 There are two  ways to add server-side encryption: <br/>
 
 - ### Console
