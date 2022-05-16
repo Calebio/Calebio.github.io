@@ -53,7 +53,7 @@ Expect: 100-continue
 ```
 
 **Use Case**<br/>
-Your company might have a policy where all files going into a particular bucket has to be encrypted. Here's to enforce encryption:  Now encryptio has to be enforced. <br/>
+Your company might have a policy where all files going into a particular bucket has to be protected from unathorized access. The solution is applying encryption to the bucket. <br/>
 
 
 ## How to add Server-side Encryption
