@@ -7,7 +7,7 @@ tags: [EC2, Networking, ENI, EN, EFA, SR-IOV]
 
 ---
 
-There are different networking options for EC2 instances and these options are dependent on a user's **Cost** and **Purpose**.<br/>
+There are different networking options for EC2 instances and these options are dependent on a user's **Budget** and **Purpose**.<br/>
 You can attach any of the 3 different virtual networking cards to your EC2 instance. Now let's explore the networking options. 
 
 - ## Elastic Network Interface - ENI
