@@ -11,25 +11,26 @@ There are different networking options for EC2 instances and these options are d
 You can attach any of the 3 different virtual networking cards to your EC2 instance. Now let's explore the networking options. 
 
 - ## Elastic Network Interface - ENI
-<p> This virtual networking card is used for basic day-to-day networking. It allows private IPV4 address, IPV4 public address, many IPV6 addresses, MAC Address, and 1 or more Security groups.<br/>
+This virtual networking card is used for basic day-to-day networking. It allows private IPV4 address, IPV4 public address, many IPV6 addresses, MAC Address, and 1 or more Security groups.<br/>
 
 **ENI Use Case** <br/>
 - ENI is mostly used to create management networks
 - Enables network and security appliances in your VPC.
 - You can use ENI to create dual-homed instances with workloads/roles on distinct subnets.
 - ENI is a way to create a low-budget, high-performance solution.
-<p/>
+
+
 
 - ## Enhanced Network - EN
 
-**What is Enhanced Network?**<br/>
+**What is Enhanced Network?** <br/>
 As the term implies, Enhanced network card is an higher networking option that provides high performance networking between 10Gbps - 100Gbp susing **Single root I/O virtualization(SR-IOV)** that enables high network performance and lower CPU utilization.
 
 - **Performance :** provides higher bandwidth, higher packet per second(PPS)
 - **CPU utilization :** Consistently lower inter-instance latencies
 
 
-**Enhanced Network(EN) comes with two options and you use it with any of the two options below**<br/>
+**Enhanced Network(EN) comes with two options and you use it with any of the two options below** <br/>
 
 - Elastic Network Adapter - ENA :  
 Supports network speed of up to 100Gbps for supported instance types.
