@@ -35,4 +35,6 @@ There are mainly two types of VPC networks : <br/>
 2. **Custom VPC**
 - Is fully customized 
 - Takes time to setup
-- 
+
+
+**these notes were taking on A Cloud Guru**
