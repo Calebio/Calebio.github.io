@@ -37,4 +37,4 @@ There are mainly two types of VPC networks : <br/>
 - Takes time to setup
 
 
-**these notes were taking on A Cloud Guru**
+**these notes were taken on A Cloud Guru**
