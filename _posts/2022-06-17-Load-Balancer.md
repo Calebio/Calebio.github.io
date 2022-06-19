@@ -21,6 +21,11 @@ Elastic Load Balance is used to automatically distribute incoming traffic across
         - With Application Load Balancer, you can only use HTTP and HTTPS.
         - To must deploy at least one SSL/TLS server certificate.
 
+
+
+
+
+
 2. **Network Load Balancer - Performance:** Operates at layer 4. When performance is a big factor to consider in your solution Network Load Balancer is the best choice because it is capable of handling millions of requests in seconds and maintaining ultra-low latency. It can decrypt traffic but you will need to install SSL certificate, and when need protocols that are not supported by Application Load Balancer.
 
 3. **Classic Load Balancer:** is a classic legacy load balancer. You can balance HTTP/HTTPS application and use layer 7 specific features, such as **x-forwarded** and **sticky sessions**. You can also use strick layer 4 load balancing for applications that rely on TCP protocol.
