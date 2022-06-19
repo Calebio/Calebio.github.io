@@ -29,3 +29,6 @@ Elastic Load Balance is used to automatically distribute incoming traffic across
         You get erro _504 Gateway time out_ if your application is has issue and classic load balancer cannot reach your application.
 
     - **sticky session:** allows you to bind a user session to a specific EC2 instance. Ensures all the requests from the user during the session are sent to the same instance. You can also use sticky session for Application Load Balancer. But the traffic will be sent at the target group level.
+
+### Health Checks.
+
