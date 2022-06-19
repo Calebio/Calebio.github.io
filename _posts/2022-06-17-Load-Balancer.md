@@ -32,7 +32,7 @@ Elastic Load Balance is used to automatically distribute incoming traffic across
 2. **Network Load Balancer - Performance:** Operates at layer 4. When performance is a big factor to consider in your solution Network Load Balancer is the best choice because it is capable of handling millions of requests in seconds and maintaining ultra-low latency. It can decrypt traffic but you will need to install SSL certificate, and when need protocols that are not supported by Application Load Balancer.
 
 
-![Application LB](/assets/images/banners/Classic-LB.jpg "Classic-LB")
+![Application LB](/assets/images/banners/Classic-LB.jpeg "Classic-LB")
 3. **Classic Load Balancer:** is a classic legacy load balancer. You can balance HTTP/HTTPS application and use layer 7 specific features, such as **x-forwarded** and **sticky sessions**. You can also use strick layer 4 load balancing for applications that rely on TCP protocol.
 
     - **x-forworded-for:** The server access log contains the ip address of the proxy or load balancer only so when traffic is sent from a load balancer, x-forworded-for request header is used to see the ip address of the client.   
