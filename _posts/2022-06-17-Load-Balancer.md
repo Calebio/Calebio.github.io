@@ -25,7 +25,7 @@ Elastic Load Balance is used to automatically distribute incoming traffic across
 - With Application Load Balancer, you can only use HTTP and HTTPS.
 - To must deploy at least one SSL/TLS server certificate.
 
-**Learns:** While provisioning an **Application load balancer** I got an _erro 503 temporarily unavailable._. After debuging for some time, I descovered the error was there because I did not register my instances to the target group I created. 
+**Learns:** While provisioning an **Application load balancer** I got an _erro 503 temporarily unavailable._. After debuging for some time, I discovered the error was there because I did not register my instances to the target group I created. 
 
 
 
