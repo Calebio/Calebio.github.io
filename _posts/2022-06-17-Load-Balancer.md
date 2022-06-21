@@ -6,7 +6,7 @@ categories: Site
 tags: [Application, Network, Classic]
 ---
 
-**Elastic Load Balancer - EBL**
+**Elastic Load Balancer - ELB**
 Elastic Load Balance is used to automatically distribute incoming traffic across multiple targets such as Amazon EC2 instances, across multiple AZs.
 
 
