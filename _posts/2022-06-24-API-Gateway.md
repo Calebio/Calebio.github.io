@@ -11,12 +11,9 @@ tags: [WAF, DDoS, ]
 **What is an API Gateway?**
  Amazon API Gateway is a fully managed service by AWS, that allows you to easily publish, create, maintain, monitor and secure your API. It allows you to put a safe "Front door" to your application.
 
+![API-Gateway](/assets/images/banners/api-backends.jpeg "API-Gateway")
 
 
-
-
-
-**Can also be accessed from mobile device**
 
 
 **Features and benefits** <br/>

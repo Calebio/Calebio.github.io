@@ -49,3 +49,6 @@ Elastic Load Balance is used to automatically distribute incoming traffic across
 ### Health Checks.
 
 All AWS load balancers can be configured with health checks. Health checks periodically sends request to load balancers registered instances to test their status, the status of a healthy load balancer is `In Service` and status of an unhealthy load balancer is `Out of Service`. A health check stops sending request to a load balancer when the status returns `Out of Service`.  
+
+
+**These notes were taken on A Cloud Guru and the Best practices from AWS Docs**
