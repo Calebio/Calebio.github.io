@@ -4,7 +4,6 @@ title: Elastic Load Balancer
 subtitle: EBS Overview
 categories: Site
 tags: [Application, Network, Classic]
-banner: "assets/images/banners/prob-photo.jpg"
 ---
 
 **Elastic Load Balancer - ELB**
