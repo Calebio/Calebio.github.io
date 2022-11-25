@@ -9,13 +9,13 @@ tags: [Terraform, Workspaces, Terraform Workspaces]
 
 
 TerraForm Workspaces, terraform workspaces are isolated versions of the terraform state. 
-With terraform workspace, you can deploy multiple versions of the same environment having different configuration counts and variable definitions.
+With terraform workspace, you can deploy multiple versions of the same environment having different configuration counts and variable definitions.<br/>
 
-This can be useful when you need to deploy to either staging, testing or production environment without affecting other environments.
+This can be useful when you need to deploy to either staging, testing or production environment without affecting other environments.<br/>
 
-Typically, these workspaces will be tied to branch names and source control.
+Typically, these workspaces will be tied to branch names and source control.<br/>
 
-Terraform Workspaces come in handy for smaller deployments. It becomes difficult to manage if your deployments become too big and has a lot of engineers working on it so you may want to look into distinct environments, but for most deployments, workspaces work extremely well and are very simple to manage.
+Terraform Workspaces come in handy for smaller deployments. It becomes difficult to manage if your deployments become too big and has a lot of engineers working on it so you may want to look into distinct environments, but for most deployments, workspaces work extremely well and are very simple to manage.<br/>
 
 
 ### Create a variable for reference
@@ -41,31 +41,30 @@ Below we will walk through the steps of creating multiple workspaces within terr
 Here I will create the first workspace and call it ‘dev’
 `terraform workspace new dev`
 Your output for this will be:
-[output=> dev workspace]()
+[output=> dev workspace](/assets/images/banners/created-dev-workspace.jpg)
 
-once a workspace is created you will automatically be moved to the workspace 
-[Image here]
+once a workspace is created you will automatically be moved to the workspace. <br/>
 
 Notice the syntax: `terraform workspace new <workspace name>`
 
-Next, we will create the production workspace and call it ‘prod’
+Next, we will create the production workspace and call it ‘prod’ 
 `terraform workspace new prod`
 
 
-So to check which workspace you are in `terraform workspace show`.
+So to check which workspace you are in `terraform workspace show`. <br/>
 
-To get a list of all the workspaces you have available `terraform workspace list` or you can see it here on your project. 
-[image list of workspaces]()
+To get a list of all the workspaces you have available `terraform workspace list` or you can see it here on your project. You can also find it in your folders here:
+[image list of workspaces](/assets/images/banners/list-workspaces-folder.jpg)
 
 ### Move between workspaces
-Now to move between workspaces notice the command syntax: 
+Now to move between workspaces here's the command syntax: 
 `terraform workspace select <workspace name>`
 
-So in my case, I’m moving to the dev workspace: `terraform workspace select dev`
+So in my case, I’m moving to the dev workspace: `terraform workspace select dev` <br/>
 
 Now I’m in my dev workspace I can apply my configurations for the dev workspace: 
-`terraform apply -auto-approve`
-OR
-`terraform apply -auto-approve -var="env=dev"` I used this to explicitly specify that I’m deploying to the dev workspace.
+`terraform apply -auto-approve` <br/>
+OR <br/>
+`terraform apply -auto-approve -var="env=dev"` I used this to explicitly specify that I’m deploying to the dev workspace.<br/>
 
 So in case you want to deploy to the `prod` workspace, you can move this “Move between workspaces” and replicate the steps for the `prod` workspace.
