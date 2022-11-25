@@ -57,12 +57,12 @@ To get a list of all the workspaces you have available `terraform workspace list
 ![image](/assets/images/banners/list-workspaces-folder.jpg "list folder")
 
 ### Move between workspaces
-Now to move between workspaces here's the command syntax: 
+Now to move between workspaces here's the command syntax: <br/>
 `terraform workspace select <workspace name>`
 
 So in my case, I’m moving to the dev workspace: `terraform workspace select dev` <br/>
 
-Now I’m in my dev workspace I can apply my configurations for the dev workspace: 
+Now I’m in my dev workspace I can apply my configurations for the dev workspace: <br/>
 `terraform apply -auto-approve` <br/>
 OR <br/>
 `terraform apply -auto-approve -var="env=dev"` I used this to explicitly specify that I’m deploying to the dev workspace.<br/>
