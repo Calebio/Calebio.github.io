@@ -4,7 +4,7 @@ title: Terraform Workspaces
 subtitle: How to create and manage Terraform workspaces
 categories: Site
 tags: [Terraform, Workspaces, Terraform Workspaces]
-# banner: "assets/images/banners/Terraform-900x0.jpeg"
+banner: "assets/images/banners/Terraform-900x0.jpeg"
 ---
 
 
