@@ -8,7 +8,7 @@ banner: "assets/images/banners/terraLogo.jpg"
 ---
 
 
-Terraform Workspaces, terraform workspaces are isolated versions of the terraform state. 
+Terraform Workspaces are isolated versions of the terraform state. 
 With terraform workspace, you can deploy multiple versions of the same environment having different configuration counts and variable definitions.<br/>
 
 This can be useful when you need to deploy to either staging, testing or production environment without affecting other environments.<br/>
