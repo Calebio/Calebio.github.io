@@ -8,8 +8,7 @@ banner: "assets/images/banners/terraLogo.jpg"
 ---
 
 
-Terraform Workspaces are isolated versions of the terraform state. 
-With terraform workspace, you can deploy multiple versions of the same environment having different configuration counts and variable definitions.<br/>
+Terraform Workspaces are isolated versions of the terraform state. With Terraform workspace, you can deploy multiple versions of the same environment having different configuration counts and variable definitions.<br/>
 
 This can be useful when you need to deploy to either staging, testing or production environment without affecting other environments.<br/>
 
@@ -30,15 +29,15 @@ Before we get on to the creation of workspaces I will create a variable to speci
 
 
 ### Backends that support multiple terraform workspace
-Here you can check on terraform docs page to find out backends that support multiple terraform workspaces. [Terraform Workspace Docs](https://developer.hashicorp.com/terraform/language/state/workspaces) <br/>
-But for the most part, many backends support multiple workspaces on terraform.
+Here you can check on Terraform docs page to find out backends that support multiple Terraform workspaces. [Terraform Workspace Docs](https://developer.hashicorp.com/terraform/language/state/workspaces) <br/>
+But for the most part, many backends support multiple workspaces on Terraform.
 So be sure to consult the docs before you implement workspaces in your workflow to verify that your backend is supported
 
 
 ### How to create a terraform workspace
-Below we will walk through the steps of creating multiple workspaces within terraform and our examples will be Development and Production workspaces. I already have configurations within my terraform code specifying what goes to production and what goes to development.<br/>
+Below we will walk through the steps of creating multiple workspaces within Terraform and our examples will be Development and Production workspaces. I already have configurations within my terraform code specifying what goes to production and what goes to development.<br/>
 
-Here I will create the first workspace and call it ‘dev’
+Here I will create the first workspace and call it `dev`
 `terraform workspace new dev`
 Your output for this will be:
 ![output=> dev workspace](/assets/images/banners/created-dev-workspace.jpg "Output dev")
@@ -47,7 +46,7 @@ once a workspace is created you will automatically be moved to the workspace. <b
 
 Notice the syntax: `terraform workspace new <workspace name>`
 
-Next, we will create the production workspace and call it ‘prod’ 
+Next, we will create the production workspace and call it `prod`
 `terraform workspace new prod`
 
 
