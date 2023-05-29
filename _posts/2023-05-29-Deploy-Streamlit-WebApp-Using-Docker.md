@@ -61,25 +61,25 @@ with st.echo(code_location='below'):
       .encode(x='x:Q', y='y:Q'))
 ```
 
-3. We will then create the `requirements.txt` file and past the dependencies we need to run this web app
-it should look like this <Image>
+3. We will then create the `requirements.txt` file and past the dependencies, we need to run this web app
+it should look like this ![alt text](/assets/images/banners/Requirements.jpg)
 
 4. Now we want to be sure that the streamlit app runs locally so after saving the code, open the terminal in your vscode, 
 if you're not already in the `app` directory move to the `/app` directory with `cd app`, and use this code to run your streamlit app
 `streamlit run streamlit_app.py`.
-You should have an output like this <Image>
+You should have an output like this ![first run streamlit output](/assets/images/banners/runStreamlit.jpg)
 
-5. Click on the ip address on the output or copy the ip address and paste it into your browser you should have a result like <Image> use `ctl c` to stop the web application.
+5. Click on the ip address on the output or copy the ip address and paste it into your browser you should have a result like: ![first browser output](/assets/images/banners/first-dashborad-streamlit.jpg). <br/>
+Use `ctl c` to stop the web application.
+
+First, we want to make sure we have docker and azure-cli installed and that we are logged in to the Azure portal.
+Check if docker is installed `docker --version` if you have docker installed you should get an output like: ![Docker output](/assets/images/banners/docker-version-check.jpg).
+check azure-cli `az --version` if azure-cli is installed you should have an output like ![az-cli output](/assets/images/banners/az-cli-version.jpg)
 
 **NOW LET's CONTAINERIZE**
-First we want to make sure we have docker and azure-cli installed and we are logged in to the azure portal.
-check if docker is installed `docker --version` if you have docker installed you should get an output like <Image>
-check azure-cli `az --version` if azure cli is installed you should have an output like <Image>
-
 Now we have confirmed that we have what we need to containerize the web application. 
-1. We will add a dockerfile to help up build the docker image we need. Create a file and name it `Dockerfile`
-there's no file extension for this file.
-paste this code in your `Dockerfile`
+1. We will add a Dockerfile to help build the Docker image we need. Create a file and name it `Dockerfile` there's no file extension for this file. <br/>
+Paste this code into your `Dockerfile``
 
 ```
 # app/Dockerfile
@@ -107,7 +107,7 @@ ENTRYPOINT ["streamlit", "run", "streamlit_app.py", "--server.port=8501", "--ser
 ```
 
 2. Now we want to login to our Azure from the CLI using the `az login` command.
-If after your login and you get a message saying something like`No subscriptions found for your@email.com.`
+If after your login and you get a message saying something like `No subscriptions found for your@email.com.`
 
 3. You will need to use the tenant ID to log in so your subscription can be added. something like `az login <TENANT ID>`
 
