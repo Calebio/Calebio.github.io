@@ -78,15 +78,16 @@ Use `ctl c` to stop the web application.
 ## Let's Connect/Login to Azure & and Dockerize!
 
 First, we want to make sure we have docker and azure-cli installed and that we are logged in to the Azure portal.
-Check if docker has been installed `docker -`-version` if you have docker installed you should get an output like ![Docker output](/assets/images/banners/docker-version-check.jpg). <br/>
+Check if docker has been installed `docker --version` if you have docker installed you should get an output like ![Docker output](/assets/images/banners/docker-version-check.jpg). <br/>
 
-Check azure-cli `az --version` if azure-cli is installed you should have an output like ![az-cli output](/assets/images/banners/az-cli-version.jpg). <br/>
+Check azure-cli `az --version` if azure-cli is installed you should have an output like ![az-cli output](/assets/images/banners/az-cli-version.jpg) <br/>
  
-Now we have confirmed that we have what we need to containerize the web application. 
+Now we have confirmed that we have what we need, the next steps!
 
-1. We will add a Dockerfile, to help build the Docker image we need. Create a file in the `app` directory and name it `Dockerfile` there's no file extension for this file. <br/>
+- We will add a Dockerfile, to help build the Docker image we need. Create a file in the `app` directory and name it `Dockerfile` there's no file extension for this file. <br/>
 Paste this code into your `Dockerfile`
-```
+
+```Dockerfile
 # app/Dockerfile
 
 FROM python:3.9-slim
@@ -112,12 +113,13 @@ ENTRYPOINT ["streamlit", "run", "streamlit_app.py", "--server.port=8501", "--ser
 ```
 
 - Now we want to login to our Azure from the CLI or Terminal using the `az login` command.
-If after your login and you get a message saying something like `No subscriptions found for your@email.com.` You might want to check and make sure you have an active subscription.
+If after your login and you get a message saying something like <br/>
+`No subscriptions found for your@email.com.` You might want to check and make sure you have an active subscription.
 
 - If you have an active subscription, you will need to use the tenant ID to log in so your subscription can be added. something like `az login <TENANT ID>`
 
 Side Note: If you don't know where to get your tenantID
-> Go to your Azure portal, in the search bar type in `tenantID` and then click on **Tenant properties** and then you can see the tenantID go on and copy it then use it to complete the login.
+> Go to your Azure portal, in the search bar type in `tenantID` and then click on **Tenant properties** you will find the tenantID go on and copy it then use it to complete the login.
 
 ## Create a repository on Azure Container registries to store your docker image on the Azure Portal
 
@@ -125,10 +127,10 @@ We will do this on the Azure portal
 
 - On the portal, search for `Container registries` click on it and click on create ![create container registry](/assets/images/banners/create-registry.jpg)
 
-- You should have something like this ![create container registry](/assets//images/banners/create-registry-2.jpg) You can create a new resource group if you don't have one.
+- You should have something like this when you click on create ![create container registry](/assets//images/banners/create-registry-2.jpg) You can create a new resource group if you don't have one.
 You also have to choose a name for your registry and it has to be unique. 
 
-- Once you have chosen a resource group and a name for your registry click on `review + create` and go to create the registry.
+- Once you have chosen a resource group and a name for your registry click on `review + create` and go on to create the registry by clicking in `Create`.
 
 - After creating the registry, your registry dashboard should look like this ![after creating container registry](/assets/images/banners/deploy-dashboard.jpg)
 
@@ -161,7 +163,12 @@ Your output should look like this ![after docker push](/assets/images/banners/pu
 
 **Now we will go back to vscode to run the docker image**
 
-- On the terminal run `docker run --rm -p 8501:8501 login_server/image_name:v1` in my case `docker run --rm -p 8501:8501 testdeployregistry.azurecr.io/streamlit:v1`.
-Your output should look like this ![final output](/assets/images/banners/final-output.jpg) click on the ip address or paste it in your browser
+- On the terminal run `docker run --rm -p 8501:8501 login_server/image_name:v1` in my case `docker run --rm -p 8501:8501 testdeployregistry.azurecr.io/streamlit:v1` <br/>
 
-- Here's the final result! ![final dashboard](/assets/images/banners/final-dashboard.jpg) if you made it to this point congratulations!!
+Your output should look like this ![final output](/assets/images/banners/final-output.jpg) <br/>
+
+- Click on the ip address or paste it into your browser
+
+- Here's the container running on Azure! ![final dashboard](/assets/images/banners/final-dashboard.jpg) if you made it to this point congratulations!! we are almost there!
+
+
