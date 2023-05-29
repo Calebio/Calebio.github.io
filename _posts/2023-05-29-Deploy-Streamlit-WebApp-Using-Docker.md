@@ -188,7 +188,7 @@ Your output should look like this ![final output](/assets/images/banners/final-o
 **Once the deployment is complete we want to check our deployment on Azure app services.**
 
 - On the search bar type in `App Services` and Click on the service and there you will find the web app we just deployed. 
-![]
+![contigo](/assets/images/banners/contigo-web-app.jpg)
 
 - Click on the web app we just deployed and on the dashboard, when you find the endpoint/link of the web app at the `Default domain` click on the link/endpoint <br/>
 ![dashboard app services](/assets/images/banners/app-service-final.jpg)
