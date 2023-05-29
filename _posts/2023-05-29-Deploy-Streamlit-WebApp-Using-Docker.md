@@ -171,4 +171,26 @@ Your output should look like this ![final output](/assets/images/banners/final-o
 
 - Here's the container running on Azure! ![final dashboard](/assets/images/banners/final-dashboard.jpg) if you made it to this point congratulations!! we are almost there!
 
+## Deploy the image to Azure App services
 
+**This will be done on the portal**
+
+- Go back to the Azure portal and Search for `Container registries` > Click on the registry you created initially in my case `testdeployregistry`
+- On the left side, scroll down and click on `Repositories` There you can see the image we just pushed > Click on the image in my case the image is `streamlit` ![check repo](/assets/images/banners/registry-repos.jpg)
+
+- When you open the image you will see the tag we created earlier initially called `v1`.
+
+- Click on the 3 dots on the end and you will get options click on `Deploy to web app` <Image>
+
+- The next page is where you choose the site name, for me, I used `test-deploy-streamlit`, notice I also used the same resource group and subscription to make sure I have everything in one place for the tutorial. Then Click on `Create`. <br/>
+<Image>
+
+**Once the deployment is complete we want to check our deployment on Azure app services.**
+
+- On the search bar type in `App Services` and Click on the service and in there you will find the web app we just deployed. <Image>
+
+- Click on the web app we just deployed and on the dashboard you find the endpoint/link of the web app at `Default domain` <Image>
+
+- Here's the final result! Notice the endpoint having the name we specified during the creation of the web app! <Image>
+
+Congratulations!! You have gotten to the end of this tutorial, I hope you found it helpful.
