@@ -180,17 +180,22 @@ Your output should look like this ![final output](/assets/images/banners/final-o
 
 - When you open the image you will see the tag we created earlier initially called `v1`.
 
-- Click on the 3 dots on the end and you will get options click on `Deploy to web app` <Image>
+- Click on the 3 dots on the end and you will get options click on `Deploy to web app` ![deploy first](/assets/images/banners/deploy-to-web-app.jpg)
 
 - The next page is where you choose the site name, for me, I used `test-deploy-streamlit`, notice I also used the same resource group and subscription to make sure I have everything in one place for the tutorial. Then Click on `Create`. <br/>
-<Image>
+![deploy second](/assets/images/banners/deploy-to-web-app-2.jpg)
 
 **Once the deployment is complete we want to check our deployment on Azure app services.**
 
-- On the search bar type in `App Services` and Click on the service and in there you will find the web app we just deployed. <Image>
+- On the search bar type in `App Services` and Click on the service and there you will find the web app we just deployed. 
 
-- Click on the web app we just deployed and on the dashboard you find the endpoint/link of the web app at `Default domain` <Image>
 
-- Here's the final result! Notice the endpoint having the name we specified during the creation of the web app! <Image>
+- Click on the web app we just deployed and on the dashboard you find the endpoint/link of the web app at `Default domain` <br/>
+![dashboard app services](/assets/images/banners/app-service-final.jpg)
 
-Congratulations!! You have gotten to the end of this tutorial, I hope you found it helpful.
+- Here's the final result! Notice the endpoint having the name we specified during the creation of the web app. <br/>
+![dns streamlit dashboard](/assets/images/banners/final-dashboard-azure.jpg)
+
+
+
+**Congratulations!! You have gotten to the end of this tutorial, I hope you found it helpful.**
