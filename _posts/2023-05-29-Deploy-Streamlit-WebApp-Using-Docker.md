@@ -16,11 +16,11 @@ If you have the prerequisites ready we will crack on with building a very simple
 
 ## Run the Web Application Locally
 
-1. We will make the home directory we will be working from. in case I called it `testDir` inside of the `testDir` directory,
+- We will make the home directory we will be working from. I have called it `testDir` inside of the `testDir` directory,
 we will create another directory called `app` and inside the `app` directory we will create the files we need to get 
 the Streamlit dashboard to run locally first before we containerize.
 
-2. Inside the `/app` directory we will create the main file that holds the dashboard, we will call it `streamlit_app.py`
+- Inside the `/app` directory we will create the main file that holds the dashboard, we will call it `streamlit_app.py`
 and paste the following code in this file.
 
 ```python
@@ -63,15 +63,15 @@ with st.echo(code_location='below'):
       .encode(x='x:Q', y='y:Q'))
 ```
 
-3. We will then create the `requirements.txt` and paste or type in the dependencies, we need to run this web app
+- We will then create the `requirements.txt` and paste or type in the dependencies, we need to run this web app
 it should look like this ![alt text](/assets/images/banners/Requirements.jpg)
 
-4. Now we want to be sure that the streamlit app runs locally so after saving the code, open the terminal in your vscode, 
+- Now we want to be sure that the streamlit app runs locally so after saving the code, open the terminal in your vscode, 
 if you're not already in the `app` directory move to the `/app` directory with `cd app`, and use this code to run your streamlit app
 `streamlit run streamlit_app.py`.
-You should have an output like this ![first run streamlit output](/assets/images/banners/runStreamlit.jpg)
+You should have an output like this <br/> ![first run streamlit output](/assets/images/banners/runStreamlit.jpg)
 
-5. Click on the ip address on the output or copy the ip address and paste it into your browser you should have a result like: ![first browser output](/assets/images/banners/first-dashborad-streamlit.jpg). <br/>
+- Click on the ip address on the output or copy the ip address and paste it into your browser you should have a result like: ![first browser output](/assets/images/banners/first-dashborad-streamlit.jpg). <br/>
 Use `ctl c` to stop the web application.
 
 
@@ -123,7 +123,7 @@ Side Note: If you don't know where to get your tenantID
 
 ## Create a repository on Azure Container registries to store your docker image on the Azure Portal
 
-We will do this on the Azure portal
+**We will do this on the Azure portal**
 
 - On the portal, search for `Container registries` click on it and click on create ![create container registry](/assets/images/banners/create-registry.jpg)
 
@@ -135,7 +135,7 @@ You also have to choose a name for your registry and it has to be unique.
 - After creating the registry, your registry dashboard should look like this ![after creating container registry](/assets/images/banners/deploy-dashboard.jpg)
 
 
-## Build a docker image and deploy to Azure Container Registry
+## Build a docker image and deploy it to Azure Container Registry
 
 - One more thing we want to do is to enable the Admin user and get login credentials to use in pushing a docker to this registry
 Click on `Access keys` on the left and then enable Admin user, you will get your credentials and then you want to leave this page open or copy the credentials to a notepad because you will need it shortly. <br/>
@@ -169,7 +169,7 @@ Your output should look like this ![final output](/assets/images/banners/final-o
 
 - Click on the ip address or paste it into your browser
 
-- Here's the container running on Azure! ![final dashboard](/assets/images/banners/final-dashboard.jpg) if you made it to this point congratulations!! we are almost there!
+- This container is now running from the image we pushed to Azure's container registry ![final dashboard](/assets/images/banners/final-dashboard.jpg) if you made it to this point congratulations!! we are almost there!
 
 ## Deploy the image to Azure App services
 
